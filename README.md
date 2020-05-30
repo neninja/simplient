@@ -4,6 +4,8 @@ Simplificação do [Swagger](https://swagger.io)
 
 ## Utilização
 
+<img src="docs/get-started.gif" alt="get started" width="450" height="400"/>
+
 Basta copiar a pasta contendo os arquivos de build do projeto e editar o `config.js` de acordo com sua necessidade ([guia](CONFIGJS.md)). O html pode ser aberto direto pelo browser.
 
 A pasta contendo os arquivos pode ser obtida de duas formas:
