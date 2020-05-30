@@ -3,7 +3,13 @@
 Simplificação do [Swagger](https://swagger.io)
 
 ## Utilização
-...
+
+Basta copiar a pasta contendo os arquivos de build do projeto e editar o `config.js` de acordo com sua necessidade ([guia](CONFIGJS.md)). O html pode ser aberto direto pelo browser.
+
+A pasta contendo os arquivos pode ser obtida de duas formas:
+
+1. Na página de [releases](https://github.com/nenitf/simplient/releases) compactada como `build.zip`
+2. Clonando o projeto e utilizando o comando ``npm run build`` ou ``yarn build``
 
 ## Desenvolvimento
 ### `yarn start`
