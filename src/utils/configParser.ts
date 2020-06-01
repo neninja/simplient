@@ -1,6 +1,7 @@
 type Requisition = {
   method: string;
   url: string;
+  body: object;
 };
 
 type OriginalConfig = {
@@ -24,6 +25,8 @@ function configParser(originalConfig: OriginalConfig): ConfigParsed {
       const findIndex = parsedRoutes.findIndex(
         (routeIndex) => routeIndex.name === grupo,
       );
+
+      route.url = `${originalConfig.baseUrl}${route.url}`;
 
       if (findIndex >= 0) {
         parsedRoutes[findIndex].routes.push(route);

@@ -7,6 +7,7 @@ import parse from './utils/configParser';
 type Requisition = {
   url: string;
   method: string;
+  body: object;
 };
 
 type OriginalConfig = {

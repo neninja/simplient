@@ -5,6 +5,11 @@ type RequisitionProps = {
 };
 
 export const Container = styled.li<RequisitionProps>`
+  display: block;
+  margin: 0.2rem;
+`;
+
+export const Header = styled.div`
   cursor: pointer;
   display: flex;
   background: #5c6370;
@@ -12,6 +17,10 @@ export const Container = styled.li<RequisitionProps>`
   &:hover {
     background: rgba(255, 255, 255, 0.5);
   }
+`;
+
+export const Body = styled.div`
+  background: #5c6370;
 `;
 
 export const MethodTag = styled.span<RequisitionProps>`
@@ -71,3 +80,9 @@ export const UrlTag = styled.span`
 
   flex-grow: 1;
 `;
+
+export const Editor = styled.textarea``;
+export const Request = styled.div`
+  display: grid;
+`;
+export const Response = styled.div``;
