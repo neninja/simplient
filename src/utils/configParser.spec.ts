@@ -7,78 +7,97 @@ describe('configParser', () => {
         {
           method: 'POST',
           url: '/user',
+          body: {},
         },
         {
           method: 'POST',
           url: '/pet/{petId}/uploadImage',
+          body: {},
         },
         {
           method: 'POST',
           url: '/pet',
+          body: {},
         },
         {
           method: 'PUT',
           url: '/pet',
+          body: {},
         },
         {
           method: 'GET',
           url: '/pet/findByStatus',
+          body: {},
         },
         {
           method: 'GET',
           url: '/pet/{petId}',
+          body: {},
         },
         {
           method: 'POST',
           url: '/pet/{petId}',
+          body: {},
         },
         {
           method: 'DELETE',
           url: '/pet/{petId}',
+          body: {},
         },
         {
           method: 'POST',
           url: '/store/order',
+          body: {},
         },
         {
           method: 'GET',
           url: '/store/order/{orderId}',
+          body: {},
         },
         {
           method: 'DELETE',
           url: '/store/order/{orderId}',
+          body: {},
         },
         {
           method: 'GET',
           url: '/store/inventory',
+          body: {},
         },
         {
           method: 'POST',
           url: '/user/createWithArray',
+          body: {},
         },
         {
           method: 'POST',
           url: '/user/createWithList',
+          body: {},
         },
         {
           method: 'GET',
           url: '/user/{username}',
+          body: {},
         },
         {
           method: 'PUT',
           url: '/user/{username}',
+          body: {},
         },
         {
           method: 'DELETE',
           url: '/user/{username}',
+          body: {},
         },
         {
           method: 'GET',
           url: '/user/login',
+          body: {},
         },
         {
           method: 'GET',
           url: '/user/logout',
+          body: {},
         },
       ],
     };
@@ -89,35 +108,43 @@ describe('configParser', () => {
           routes: [
             {
               method: 'POST',
-              url: '/user',
+              url: 'localhost:3030/user',
+              body: {},
             },
             {
               method: 'POST',
-              url: '/user/createWithArray',
+              url: 'localhost:3030/user/createWithArray',
+              body: {},
             },
             {
               method: 'POST',
-              url: '/user/createWithList',
+              url: 'localhost:3030/user/createWithList',
+              body: {},
             },
             {
               method: 'GET',
-              url: '/user/{username}',
+              url: 'localhost:3030/user/{username}',
+              body: {},
             },
             {
               method: 'PUT',
-              url: '/user/{username}',
+              url: 'localhost:3030/user/{username}',
+              body: {},
             },
             {
               method: 'DELETE',
-              url: '/user/{username}',
+              url: 'localhost:3030/user/{username}',
+              body: {},
             },
             {
               method: 'GET',
-              url: '/user/login',
+              url: 'localhost:3030/user/login',
+              body: {},
             },
             {
               method: 'GET',
-              url: '/user/logout',
+              url: 'localhost:3030/user/logout',
+              body: {},
             },
           ],
         },
@@ -126,31 +153,38 @@ describe('configParser', () => {
           routes: [
             {
               method: 'POST',
-              url: '/pet/{petId}/uploadImage',
+              url: 'localhost:3030/pet/{petId}/uploadImage',
+              body: {},
             },
             {
               method: 'POST',
-              url: '/pet',
+              url: 'localhost:3030/pet',
+              body: {},
             },
             {
               method: 'PUT',
-              url: '/pet',
+              url: 'localhost:3030/pet',
+              body: {},
             },
             {
               method: 'GET',
-              url: '/pet/findByStatus',
+              url: 'localhost:3030/pet/findByStatus',
+              body: {},
             },
             {
               method: 'GET',
-              url: '/pet/{petId}',
+              url: 'localhost:3030/pet/{petId}',
+              body: {},
             },
             {
               method: 'POST',
-              url: '/pet/{petId}',
+              url: 'localhost:3030/pet/{petId}',
+              body: {},
             },
             {
               method: 'DELETE',
-              url: '/pet/{petId}',
+              url: 'localhost:3030/pet/{petId}',
+              body: {},
             },
           ],
         },
@@ -159,19 +193,23 @@ describe('configParser', () => {
           routes: [
             {
               method: 'POST',
-              url: '/store/order',
+              url: 'localhost:3030/store/order',
+              body: {},
             },
             {
               method: 'GET',
-              url: '/store/order/{orderId}',
+              url: 'localhost:3030/store/order/{orderId}',
+              body: {},
             },
             {
               method: 'DELETE',
-              url: '/store/order/{orderId}',
+              url: 'localhost:3030/store/order/{orderId}',
+              body: {},
             },
             {
               method: 'GET',
-              url: '/store/inventory',
+              url: 'localhost:3030/store/inventory',
+              body: {},
             },
           ],
         },
