@@ -8,6 +8,7 @@ import RequisitionContainer from './components/RequisitionContainer';
 type Requisition = {
   url: string;
   method: string;
+  body: object;
 };
 
 type Routes = {
@@ -32,8 +33,9 @@ const App: React.FC<AppProps> = ({ config }) => {
         <RequisitionContainer key={indexSubject} title={subject.name}>
           {subject.routes.map((route, indexRoute) => (
             <Requisition
-              url={route.url}
               method={route.method}
+              url={route.url}
+              body={route.body}
               key={indexRoute}
             />
           ))}
