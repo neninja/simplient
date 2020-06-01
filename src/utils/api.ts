@@ -27,12 +27,22 @@ type Props = {
   body: object;
 };
 
-export default {
-  call: async function ({ method, url, body }: Props): Promise<object> {
-    const response = await axios({
-      method: method as AxiosMethod,
-      url: url,
-    });
-    return response.data;
-  },
-};
+async function api({ method, url, body }: Props): Promise<object> {
+  const response = await axios({
+    method: method as AxiosMethod,
+    url: url,
+  });
+  return response.data;
+}
+
+export default api;
+
+// export default {
+// call: async function ({ method, url, body }: Props): Promise<object> {
+// const response = await axios({
+// method: method as AxiosMethod,
+// url: url,
+// });
+// return response.data;
+// },
+// };

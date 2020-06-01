@@ -32,7 +32,7 @@ const Requisition: React.FC<RequisitionProps> = ({
 
   async function handleSubmit() {
     const body = JSON.parse(bodyRequest);
-    const response = await api.call({ method, url, body });
+    const response = await api({ method, url, body });
     setBodyResponse(JSON.stringify(response, undefined, 4));
   }
 
