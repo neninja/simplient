@@ -1,8 +1,10 @@
 import React from 'react';
 import { render, fireEvent, waitForElement } from '@testing-library/react';
+import formatStringOfObject from '../../utils/formatStringOfObject';
 
 import Requisition from './index';
 
+/* mocks of 3rd party functions {{{*/
 type ApiProps = {
   method: string;
   url: string;
@@ -18,6 +20,14 @@ jest.mock('../../utils/api.ts', () => ({
     return { error: url };
   }),
 }));
+
+jest.mock('../../utils/formatStringOfObject.ts', () => ({
+  __esModule: true,
+  default: jest.fn().mockImplementation((obj: object) => {
+    return JSON.stringify(obj);
+  }),
+}));
+/*}}}*/
 
 describe('Requisition', () => {
   it('should render correct response on submit request', async () => {
@@ -40,6 +50,6 @@ describe('Requisition', () => {
     await waitForElement(() => pre);
 
     await waitForElement(() => getByTestId('pre'));
-    expect(pre?.textContent).toBe(JSON.stringify(mock, undefined, 4));
+    expect(pre?.textContent).toBe(formatStringOfObject(mock));
   });
 });

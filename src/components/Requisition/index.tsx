@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import api from '../../utils/api';
+import formatStringOfObject from '../../utils/formatStringOfObject';
 
 import {
   Container,
@@ -33,7 +34,7 @@ const Requisition: React.FC<RequisitionProps> = ({
   async function handleSubmit() {
     const body = JSON.parse(bodyRequest);
     const response = await api({ method, url, body });
-    setBodyResponse(JSON.stringify(response, undefined, 4));
+    setBodyResponse(formatStringOfObject(response));
   }
 
   function handleOpenLi() {
